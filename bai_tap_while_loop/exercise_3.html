@@ -1,0 +1,32 @@
+<h2>Bài 3</h2>
+    <p>Viết chương trình nhập vào chiều cao tam giác vuông và in ra tam giác có hình dạng như sau: <br>
+        ***** <br>
+        **** <br>
+        *** <br>
+        ** <br>
+        * <br>
+    </p>
+
+    <form action="">
+        <label for="">Nhập chiều cao tam giác: </label>
+        <input id="chieuCao" type="number">
+        <button id="btn-2" type="button">Submit</button>
+    </form>
+    <script>
+        let btnAction2 = document.getElementById('btn-2');
+
+btnAction2.addEventListener('click', () => {
+
+    let chieuCao = parseInt(document.getElementById('chieuCao').value);
+
+    for (let i = chieuCao; i >= 1; i--) {
+        let hang = '';
+        for (let j = 1; j <= i; j++) {
+            hang += '*';
+        }
+        console.log(hang);
+    }
+})
+    </script>
+
+    
